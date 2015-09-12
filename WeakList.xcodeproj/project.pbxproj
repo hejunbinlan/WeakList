@@ -14,6 +14,10 @@
 		10DE31371BA4246700C6EB98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DE31361BA4246700C6EB98 /* Images.xcassets */; };
 		10DE313A1BA4246700C6EB98 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10DE31381BA4246700C6EB98 /* LaunchScreen.xib */; };
 		10DE31461BA4246700C6EB98 /* WeakListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DE31451BA4246700C6EB98 /* WeakListTests.m */; };
+		10DE31551BA4247700C6EB98 /* WeakDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DE31501BA4247700C6EB98 /* WeakDictionary.m */; };
+		10DE31561BA4247700C6EB98 /* WeakSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DE31521BA4247700C6EB98 /* WeakSet.m */; };
+		10DE31571BA4247700C6EB98 /* WeakArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DE31541BA4247700C6EB98 /* WeakArray.m */; };
+		10DE315B1BA4248C00C6EB98 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DE315A1BA4248C00C6EB98 /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		10DE313F1BA4246700C6EB98 /* WeakListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeakListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DE31441BA4246700C6EB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10DE31451BA4246700C6EB98 /* WeakListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakListTests.m; sourceTree = "<group>"; };
+		10DE314F1BA4247700C6EB98 /* WeakDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakDictionary.h; sourceTree = "<group>"; };
+		10DE31501BA4247700C6EB98 /* WeakDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakDictionary.m; sourceTree = "<group>"; };
+		10DE31511BA4247700C6EB98 /* WeakSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakSet.h; sourceTree = "<group>"; };
+		10DE31521BA4247700C6EB98 /* WeakSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakSet.m; sourceTree = "<group>"; };
+		10DE31531BA4247700C6EB98 /* WeakArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakArray.h; sourceTree = "<group>"; };
+		10DE31541BA4247700C6EB98 /* WeakArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakArray.m; sourceTree = "<group>"; };
+		10DE31591BA4248C00C6EB98 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		10DE315A1BA4248C00C6EB98 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,9 @@
 				10DE312E1BA4246700C6EB98 /* AppDelegate.m */,
 				10DE31301BA4246700C6EB98 /* ViewController.h */,
 				10DE31311BA4246700C6EB98 /* ViewController.m */,
+				10DE31591BA4248C00C6EB98 /* Model.h */,
+				10DE315A1BA4248C00C6EB98 /* Model.m */,
+				10DE31581BA4247A00C6EB98 /* WeakList */,
 				10DE31331BA4246700C6EB98 /* Main.storyboard */,
 				10DE31361BA4246700C6EB98 /* Images.xcassets */,
 				10DE31381BA4246700C6EB98 /* LaunchScreen.xib */,
@@ -117,6 +132,19 @@
 				10DE31441BA4246700C6EB98 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10DE31581BA4247A00C6EB98 /* WeakList */ = {
+			isa = PBXGroup;
+			children = (
+				10DE314F1BA4247700C6EB98 /* WeakDictionary.h */,
+				10DE31501BA4247700C6EB98 /* WeakDictionary.m */,
+				10DE31511BA4247700C6EB98 /* WeakSet.h */,
+				10DE31521BA4247700C6EB98 /* WeakSet.m */,
+				10DE31531BA4247700C6EB98 /* WeakArray.h */,
+				10DE31541BA4247700C6EB98 /* WeakArray.m */,
+			);
+			name = WeakList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10DE31561BA4247700C6EB98 /* WeakSet.m in Sources */,
 				10DE31321BA4246700C6EB98 /* ViewController.m in Sources */,
+				10DE31551BA4247700C6EB98 /* WeakDictionary.m in Sources */,
+				10DE31571BA4247700C6EB98 /* WeakArray.m in Sources */,
+				10DE315B1BA4248C00C6EB98 /* Model.m in Sources */,
 				10DE312F1BA4246700C6EB98 /* AppDelegate.m in Sources */,
 				10DE312C1BA4246700C6EB98 /* main.m in Sources */,
 			);
